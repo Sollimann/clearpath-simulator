@@ -12,5 +12,8 @@
                     $(find xacro)/xacro $(find jackal_description)/urdf/jackal.urdf.xacro
                     --inorder" />
 
+  <include file="$(find jackal_broadcaster)/launch/jackal_broadcaster.launch"/> 
+
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
 </launch>
