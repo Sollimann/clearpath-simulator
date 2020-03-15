@@ -265,14 +265,13 @@
     <origin xyz="0 0 0.18" rpy="0 0 0" />
   </VLP-16>
 
-  <!-- Bring in simulation data for Gazebo.  
-  <xacro:include filename="$(find jackal_description)/urdf/jackal.gazebo" />  -->
+  <!-- add kinect camera -->  
+  <xacro:include filename="$(find jackal_description)/urdf/sensors/kinect.urdf.xacro" />
+    <jackal_kinect/>
+    <joint name="kinect_mount_joint" type="fixed">
+      <origin xyz="0.1 0 0.05" rpy="0 0 0" />
+      <parent link="front_mount" />
+      <child link="kinect_mount" />
+    </joint>
 
-  <!-- Optional standard accessories, including their simulation data. The rendering
-       of these into the final description is controlled by optenv variables, which
-       default each one to off. 
-  <xacro:include filename="$(find jackal_description)/urdf/accessories.urdf.xacro" /> -->
-
-  <!-- Optional custom includes.  
-  <xacro:include filename="$(optenv JACKAL_URDF_EXTRAS empty.urdf)" />  -->
 </robot>
