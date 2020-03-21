@@ -14,15 +14,15 @@ sudo apt-get install -y ros-$ROSVERSION-velodyne-*
 sudo apt-get install -y ros-$ROSVERSION-teleop-twist-joy
 sudo apt-get install -y ros-$ROSVERSION-joy
 sudo apt-get install -y ros-$ROSVERSION-twist-mux
-sudo apt-get install -y ros-$ROSVERSION-move-base 
-sudo apt-get install -y ros-$ROSVERSION-interactive-marker-twist-server
 sudo apt-get install -y ros-$ROSVERSION-controller-manager 
 
 
 # optional
-sudo apt-get install -y ros-$ROSVERSION-map-server 
-sudo apt-get install -y ros-$ROSVERSION-gmapping     
-sudo apt-get install -y ros-$ROSVERSION-image-proc
+# sudo apt-get install -y ros-$ROSVERSION-move-base 
+#sudo apt-get install -y ros-$ROSVERSION-interactive-marker-twist-server
+#sudo apt-get install -y ros-$ROSVERSION-map-server 
+#sudo apt-get install -y ros-$ROSVERSION-gmapping     
+#sudo apt-get install -y ros-$ROSVERSION-image-proc
 #sudo apt-get install -y ros-$ROSVERSION-robot-localization
 #sudo apt-get install -y ros-$ROSVERSION-pointgrey-camera-description
 #sudo apt-get install -y ros-$ROSVERSION-lms1xx
